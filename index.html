@@ -1,1 +1,138 @@
 
+
+
+
+
+<html>
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/tooltip.css">
+<script type="text/javascript" src='js/main.js'></script>
+
+
+<script ></script>
+
+<style>
+
+</style>
+
+
+
+</head>
+<body>
+<div class="main" style="">
+	<!-- home button -->
+
+	<div class="home_icon_div"><span tooltip="Go back to Home." flow="right">&#8962;</span></div>
+	
+	<!-- left side image display -->
+
+	<div class="section_left" style="background-color:#C6C6C6;">
+
+		<div>
+			<img src="https://placehold.it/100x50/C6C6C6/ffffff.png&text=Logo" />
+			<span class="vl"> </span>
+			<span>Mendelian Inheritance</span>
+		</div>
+		<div class="header" style="color:white;font-weight:bold;font-size:15px;padding: 15px 10px;">
+			<span>Mendelian Inheritance</span>
+		</div>
+		<div class="description"  style="color:##484545;font-weight:bold;font-size:15px;padding: 5px 10px;">
+			<span>Inheritance of characters according to the classical laws formulated by Gregor Mendel, which give the classic ratios of segregation in the F2 generation. <a target="_blank" href="https://www.sciencedirect.com/topics/medicine-and-dentistry/mendelian-inheritance">Read more</a></span>
+		</div>
+		<div style="width:50px;height:100px;">
+			<span tooltip="has YY alleles" flow="down"><img src="img/yellow_pea.svg" alt="yellow pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;" /></span>
+			<span tooltip="has yy alleles" flow="down"><img src="img/green_pea.svg" alt="green pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;"/></span>
+		</div>
+		<table class="table_pea" style="margin: auto;margin-top:-90px;">
+			<tbody>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="pea_1 cell_pea" tooltip="has YY alleles" flow="right"><img src="img/yellow_pea.svg" /><p>YY</p></td>
+					<td class="pea_2 cell_pea" tooltip="has Yy alleles" flow="left"><img src="img/yellow_pea.svg" /><p>Yy</p></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="pea_3 cell_pea" tooltip="has Yy alleles" flow="right"><img src="img/yellow_pea.svg" /><p>Yy</p></td>
+					<td class="pea_4 cell_pea" tooltip="has yy alleles" flow="left"><img src="img/green_pea.svg"  /><p>yy</p></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+
+	<!-- right side info -->
+
+	<div class="section_right" style="background-color:#D3D3D3;">
+		<div class="icon_controller" style=""><span ><a tooltip="More infomation." flow="left">&#9432;</a> <a tooltip="Close" flow="down">&#9447;</a></span></div>
+		<table  class="table_data" style="padding-top:20px;">
+			<tbody>
+				<tr>
+					<td class="table_title" colspan="3" tooltip="combination of traits" flow="down">Phenotypic Ratio</td>
+				</tr>	
+				<tr>
+					<td class="ph_1 cell_data" tooltip="have 2 dominant alleles" flow="right">Homozygous Dominanl</td>
+					<td class="ph_2 cell_data" tooltip="two different alleles" flow="right">Helerozygous</td>
+					<td class="ph_3 cell_data" tooltip="have 2 recessive allele" flow="left">Homozygous Recessive</td>
+				</tr>
+				<tr>
+					<td class="ph_1 cell_data" tooltip="1 has YY" flow="right">1</td>
+					<td class="ph_2 cell_data" tooltip="2 have Yy" flow="right">2</td>
+					<td class="ph_3 cell_data" tooltip="1 has yy" flow="left">1</td>
+				</tr>
+				<tr>
+					<td class="ph_1 cell_data" tooltip="1 out of 4 pea" flow="right">25%</td>
+					<td class="ph_2 cell_data" tooltip="2 out of 4 peas" flow="right">50%</td>
+					<td class="ph_3 cell_data" tooltip="1 out of 4 pea" flow="left">25%</td>
+				</tr>
+			</tbody>
+		</table>
+
+		
+		
+
+		<table  style="width:100%;padding:20px 0px;" cellpadding="5" style="padding-top:30px;">
+			<tbody>
+				<tr>
+					<td class="table_title" colspan="2" tooltip="Pattern of offspring distribution" flow="down">Genotypic ratio</td>
+				</tr>	
+				<tr>
+					<td class="gr_1 cell_data" tooltip="yellow pea" flow="right">Yellow</td>
+					<td class="gr_2 cell_data" tooltip="green pea" flow="left">Green</td>
+				</t> 
+				<tr> 
+					<td class="gr_1 cell_data" tooltip="3 yellow peas" flow="right">3</td>
+					<td class="gr_2 cell_data" tooltip="1 green pea" flow="left">1</td>
+				</tr> 
+				<tr> 
+					<td class="gr_1 cell_data" tooltip="3 out of 4 peas" flow="right">75%</td>
+					<td class="gr_2 cell_data" tooltip="1 out of 4 pea" flow="left">25%</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</div>
+
+</body>
+
+
+<script>
+function log(s){window.console && console.log(s);};
+
+
+</script>
+
+</html>
