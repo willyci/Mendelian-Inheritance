@@ -41,7 +41,7 @@ function pea_animate_1(){
 	var x = 0; 
 	var y = 0;
 	
-	x = $('.pea_1 > img')[0].getBoundingClientRect().top-8;
+	x = $('.pea_1 > img')[0].getBoundingClientRect().top-8+$(window).scrollTop();
 	y = $('.pea_1 > img')[0].getBoundingClientRect().left-1;	
 	$('#ypea1').animate({top:x+'px', left:y+'px'},{ duration: 1000, queue: false ,   complete:function () { $('.pea_1 > img').css('visibility','visible'); }});
 	$('#ypea_svg1').animate({height:'60px', width:'60px'},{ duration: 1000, queue: false , complete:function(){ $('#ypea_svg1').fadeTo({ duration: 500 },0,function(){});  }});
@@ -57,7 +57,7 @@ function pea_animate_2(){
 	var x = 0; 
 	var y = 0;
 	
-	x = $('.pea_2 > img')[0].getBoundingClientRect().top-8;
+	x = $('.pea_2 > img')[0].getBoundingClientRect().top-8+$(window).scrollTop();
 	y = $('.pea_2 > img')[0].getBoundingClientRect().left-1;	
 	$('#ypea2').animate({top:x+'px', left:y+'px'},{ duration: 1000, queue: false ,   complete:function () { $('.pea_2 > img').css('visibility','visible'); }});
 	$('#ypea_svg2').animate({height:'60px', width:'60px'},{ duration: 1000, queue: false , complete:function(){ $('#ypea_svg2').fadeTo({ duration: 500 },0,function(){});  }});
@@ -74,7 +74,7 @@ function pea_animate_3(){
 	var x = 0; 
 	var y = 0;
 	
-	x = $('.pea_3 > img')[0].getBoundingClientRect().top-8;
+	x = $('.pea_3 > img')[0].getBoundingClientRect().top-8+$(window).scrollTop();
 	y = $('.pea_3 > img')[0].getBoundingClientRect().left-1;	
 	$('#ypea3').animate({top:x+'px', left:y+'px'},{ duration: 1000, queue: false ,   complete:function () { $('.pea_3 > img').css('visibility','visible'); }});
 	$('#ypea_svg3').animate({height:'60px', width:'60px'},{ duration: 1000, queue: false , complete:function(){ $('#ypea_svg3').fadeTo({ duration: 500 },0,function(){});  }});
@@ -90,7 +90,7 @@ function pea_animate_4(){
 	var x = 0; 
 	var y = 0;
 	
-	x = $('.pea_4 > img')[0].getBoundingClientRect().top-8;
+	x = $('.pea_4 > img')[0].getBoundingClientRect().top-8+$(window).scrollTop();
 	y = $('.pea_4 > img')[0].getBoundingClientRect().left-1;	
 	$('#ypea4').animate({top:x+'px', left:y+'px'},{ duration: 1000, queue: false ,   complete:function () { $('.pea_4 > img').css('visibility','visible'); }});
 	$('#ypea_svg4').animate({height:'60px', width:'60px'},{ duration: 1000, queue: false , complete:function(){ $('#ypea_svg4').fadeTo({ duration: 500 },0,function(){});  }});
@@ -128,6 +128,11 @@ function reset_all() {
 	$('#gpea4').css('top', 'auto').css('left', 'auto');
 	
 }
+
+
+
+function log(s){window.console && console.log(s);};
+
 
 $(function() {
     log( "ready go!" );

@@ -170,10 +170,19 @@ td {
  	text-transform: uppercase;
  }
 
+ 
+ /* for iphone */
 @media only screen and (min-device-width : 375px) 
 				   and (max-device-width : 667px){
-.home_icon_div, .icon_controller {
-	display:none;
+.home_icon_div {
+	
+	left:0px;
+}
+
+.icon_controller {
+	top: 0px;
+    position: absolute;
+    right: 10px;
 }
 
 
@@ -193,6 +202,110 @@ td {
 	min-width: 200px;
 	border: solid 0px ;
 	padding-left: 15px 0px;
+	min-height: 460px;
+    max-height: 460px;
+}
+
+.section_right {
+
+	width: 100%;
+	float: left;
+	margin: 0%;
+	padding: 10px;
+	max-width: :450px;
+	min-width: 340px;
+	border: solid 0px ;
+	padding-left: 0px;
+}
+}
+
+
+/* for ipad */
+
+@media only screen and (min-device-width : 768px) 
+				   and (max-device-width : 1024px){
+.home_icon_div {
+	
+	left:0px;
+}
+
+.icon_controller {
+	top: 0px;
+    position: absolute;
+    right: 10px;
+}
+
+.main {
+	padding-left: 0px;
+	width: 100%;
+	min-width: 375px;
+}
+
+.section_left {
+
+	width: 50%;
+	height:100%;
+	float: left;
+	margin: 0%;
+	padding: 10px;
+	min-width: 200px;
+	border: solid 0px ;
+	padding-left: 15px 0px;
+	min-height: 560px;
+    max-height: 560px;
+}
+
+.section_right {
+
+	width: 46%;
+	height:100%;
+	float: left;
+	margin: 0%;
+	padding: 10px;
+	max-width: :450px;
+	min-width: 340px;
+	border: solid 0px ;
+	padding-left: 0px;
+	min-height: 560px;
+    max-height: 560px;
+}
+}
+
+
+
+
+ /* for iphone */
+@media only screen  and (max-device-width : 375px){
+.home_icon_div {
+	
+	left:0px;
+}
+
+.icon_controller {
+	top: 0px;
+    position: absolute;
+    right: 10px;
+}
+
+
+
+.main {
+	padding-left: 0px;
+	width: 100%;
+	min-width: 375px;
+}
+
+.section_left {
+
+	width: 100%;
+	float: left;
+	margin: 0%;
+	padding: 10px;
+	min-width: 200px;
+	border: solid 0px ;
+	padding-left: 15px 0px;
+	min-height: 460px;
+    max-height: 460px;
 }
 
 .section_right {
