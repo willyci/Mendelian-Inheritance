@@ -41,7 +41,7 @@ function pea_animate_1(){
 	reset_all();
 
 	var x = $('.pea_1 > img')[0].getBoundingClientRect().top-8+$(window).scrollTop();
-	var y = $('.pea_1 > img')[0].getBoundingClientRect().left-1;	
+	var y = $('.pea_1 > img')[0].getBoundingClientRect().left-1+$(window).scrollLeft();	
 	$('#ypea1').animate({top:x+'px', left:y+'px'},{ duration: 1000, queue: false ,   complete:function () { $('.pea_1 > img').css('visibility','visible'); }});
 	$('#ypea_svg1').animate({height:'60px', width:'60px'},{ duration: 1000, queue: false , complete:function(){ $('#ypea_svg1').fadeTo({ duration: 500 },0,function(){});  }});
 	$('#gpea1').animate({top:(x-50)+'px', left:y+'px'},{ duration: 1000, queue: false },function(){});
@@ -53,7 +53,7 @@ function pea_animate_1(){
 function pea_animate_2(){
 
 	var x = $('.pea_2 > img')[0].getBoundingClientRect().top-8+$(window).scrollTop();
-	var y = $('.pea_2 > img')[0].getBoundingClientRect().left-1;	
+	var y = $('.pea_2 > img')[0].getBoundingClientRect().left-1+$(window).scrollLeft();	
 	$('#ypea2').animate({top:x+'px', left:y+'px'},{ duration: 1000, queue: false ,   complete:function () { $('.pea_2 > img').css('visibility','visible'); }});
 	$('#ypea_svg2').animate({height:'60px', width:'60px'},{ duration: 1000, queue: false , complete:function(){ $('#ypea_svg2').fadeTo({ duration: 500 },0,function(){});  }});
 	$('#gpea2').animate({top:(x-50)+'px', left:y+'px'},{ duration: 1000, queue: false },function(){});
@@ -65,7 +65,7 @@ function pea_animate_2(){
 function pea_animate_3(){
 	
 	var x = $('.pea_3 > img')[0].getBoundingClientRect().top-8+$(window).scrollTop();
-	var y = $('.pea_3 > img')[0].getBoundingClientRect().left-1;	
+	var y = $('.pea_3 > img')[0].getBoundingClientRect().left-1+$(window).scrollLeft();	
 	$('#ypea3').animate({top:x+'px', left:y+'px'},{ duration: 1000, queue: false ,   complete:function () { $('.pea_3 > img').css('visibility','visible'); }});
 	$('#ypea_svg3').animate({height:'60px', width:'60px'},{ duration: 1000, queue: false , complete:function(){ $('#ypea_svg3').fadeTo({ duration: 500 },0,function(){});  }});
 	$('#gpea3').animate({top:(x-50)+'px', left:y+'px'},{ duration: 1000, queue: false },function(){});
@@ -77,7 +77,7 @@ function pea_animate_3(){
 function pea_animate_4(){
 	
 	var x = $('.pea_4 > img')[0].getBoundingClientRect().top-8+$(window).scrollTop();
-	var y = $('.pea_4 > img')[0].getBoundingClientRect().left-1;	
+	var y = $('.pea_4 > img')[0].getBoundingClientRect().left-1+$(window).scrollLeft();	
 	$('#ypea4').animate({top:x+'px', left:y+'px'},{ duration: 1000, queue: false ,   complete:function () { $('.pea_4 > img').css('visibility','visible'); }});
 	$('#ypea_svg4').animate({height:'60px', width:'60px'},{ duration: 1000, queue: false , complete:function(){ $('#ypea_svg4').fadeTo({ duration: 500 },0,function(){});  }});
 	$('#gpea4').animate({top:(x-50)+'px', left:y+'px'},{ duration: 1000, queue: false },function(){});

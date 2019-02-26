@@ -14,9 +14,8 @@ body{
 }
 
 .section_left {
-
 	width: 62%;
-	
+	background-color:#C6C6C6;
 	float: left;
 	margin: 0%;
 	padding: 10px;
@@ -25,6 +24,64 @@ body{
 	height: 500px;
 	max-height: 550px;
 	min-height: 450px;
+}
+
+.logo {
+	color: white;
+	font-size : 25px;
+	padding: 10px;
+}
+
+.title {
+	color:white;
+
+}
+
+.header {
+	color:white;
+	font-weight:bold;
+	font-size:15px;
+	padding: 15px 15px;
+}
+
+.description {
+	color:#484545; 
+	font-weight: bold;
+	font-size:15px;
+	padding: 5px 10px;
+}
+
+
+.pea_holder {
+	width:50px;height:100px;
+}
+
+[id^='ypea_svg'] {
+	width:40px;
+	height:40px;
+	padding-top:10px;
+}
+
+[id^='gpea_svg'] {
+	width:40px;
+	height:40px;
+	padding-top:10px;
+}
+
+#gpea1, #gpea2, #gpea3, #gpea4, #gpea5 {
+	position:absolute;
+	padding-top:50px;
+}
+
+#ypea1, #ypea2, #ypea3, #ypea4, #ypea5 {
+	position:absolute;
+}
+
+.replay_bt {
+	float:right;
+	padding:0 20px 0 0;
+	cursor:pointer;
+	margin-top: -25px;
 }
 
 .section_right {
@@ -39,13 +96,21 @@ body{
 	height: 500px;
 	max-height: 550px;
 	min-height: 450px;
+	background-color:#D3D3D3;
+}
 
+.icon_controller > a {
+	font-size:25px;
 }
 
 td {
 	text-align: center;
 }
 
+.table_pea {
+	margin: auto;
+	margin-top:-90px;
+}
 
 .table_pea > th > td{
   border: 2px solid;
@@ -81,6 +146,10 @@ td {
 }
 
 
+.table_data {
+	padding-top:20px;
+}
+
 .table_data > th > td{
   border: 2px solid #C6C6C6;
   border-collapse: collapse;
@@ -98,7 +167,10 @@ td {
 }
 
 
-
+.table_row_two {
+	width:100%;
+	padding:20px 0px;
+}
 
 
 .mouse_over_yellow {
@@ -158,7 +230,7 @@ td {
 .icon_controller span
 {
 	color:white; 
-	font-size:25;
+	font-size:25px;
 	padding-right:15px;
 	padding-top: 10px;
 }
@@ -204,6 +276,7 @@ td {
 	padding-left: 15px 0px;
 	min-height: 460px;
     max-height: 460px;
+	 box-sizing: border-box;
 }
 
 .section_right {
@@ -216,6 +289,11 @@ td {
 	min-width: 340px;
 	border: solid 0px ;
 	padding-left: 0px;
+	 box-sizing: border-box;
+}
+
+.logo {
+	padding: 15px;
 }
 }
 
@@ -269,6 +347,10 @@ td {
 	min-height: 560px;
     max-height: 560px;
 }
+
+.logo {
+	padding: 15px;
+}
 }
 
 
@@ -306,6 +388,7 @@ td {
 	padding-left: 15px 0px;
 	min-height: 460px;
     max-height: 460px;
+	 box-sizing: border-box;
 }
 
 .section_right {
@@ -318,5 +401,11 @@ td {
 	min-width: 340px;
 	border: solid 0px ;
 	padding-left: 0px;
+	 box-sizing: border-box;
 }
+
+.logo {
+	padding: 15px;
+}
+
 }

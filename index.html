@@ -11,38 +11,39 @@
    <script type="text/javascript" src='js/main.js'></script>
 </head>
 <body>
-   <div class="main" style="">
+   <div class="main" >
    <!-- home button -->
    <nav>
       <div class="home_icon_div"><span tooltip="Go back to Home." flow="right">&#8962;</span></div>
    </nav>
    <section>
       <!-- left side image display -->
-      <div class="section_left" style="background-color:#C6C6C6;">
+      <div class="section_left" >
          <div>
-            <img src="https://placehold.it/100x50/C6C6C6/ffffff.png&text=Logo" />
+            <!-- <img src="https://placehold.it/100x50/C6C6C6/ffffff.png&text=Logo" /> -->
+			<span class="logo">Logo</span>
             <span class="vl"> </span>
-            <span style="color:white;">Mendelian Inheritance</span>
+            <span class="title">Mendelian Inheritance</span>
          </div>
-         <div class="header" style="color:white;font-weight:bold;font-size:15px;padding: 15px 10px;">
+         <div class="header" >
             <span>Mendelian Inheritance</span>
          </div>
-         <div class="description"  style="color:##484545;font-weight:bold;font-size:15px;padding: 5px 10px;">
+         <div class="description"  style="">
             <span>Inheritance of characters according to the classical laws formulated by Gregor Mendel, which give the classic ratios of segregation in the F2 generation. <a target="_blank" href="https://www.sciencedirect.com/topics/medicine-and-dentistry/mendelian-inheritance">Read more</a></span>
          </div>
-         <div style="width:50px;height:100px;">
-            <span id="gpea1" style="position:absolute;padding-top:50px;" tooltip="" flow="down"><img id="gpea_svg1" src="img/green_pea.svg" alt="green pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;"/></span>
-            <span id="gpea2" style="position:absolute;padding-top:50px;" tooltip="" flow="down"><img id="gpea_svg2" src="img/green_pea.svg" alt="green pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;"/></span>
-            <span id="gpea3" style="position:absolute;padding-top:50px;" tooltip="" flow="down"><img id="gpea_svg3" src="img/green_pea.svg" alt="green pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;"/></span>
-            <span id="ypea1" style="position:absolute;" tooltip="" flow="down"><img id="ypea_svg1" src="img/yellow_pea.svg" alt="yellow pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;"/></span>
-            <span id="ypea2" style="position:absolute;" tooltip="" flow="down"><img id="ypea_svg2" src="img/yellow_pea.svg" alt="yellow pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;" /></span>
-            <span id="ypea3" style="position:absolute;" tooltip="" flow="down"><img id="ypea_svg3" src="img/yellow_pea.svg" alt="yellow pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;" /></span>
-            <span id="ypea4" style="position:absolute;" tooltip="" flow="down"><img id="ypea_svg4" src="img/yellow_pea.svg" alt="yellow pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;" /></span>
-            <span id="gpea4" style="position:absolute;padding-top:50px;" tooltip="" flow="down"><img id="gpea_svg4" src="img/green_pea.svg" alt="green pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;"/></span>
-            <span id="ypea5" style="position:absolute;" tooltip="has YY alleles" flow="right"><img id="ypea_svg5" src="img/yellow_pea.svg" alt="yellow pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;" /></span>
-            <span id="gpea5" style="position:absolute;padding-top:50px;" tooltip="has yy alleles" flow="right"><img id="gpea_svg5" src="img/green_pea.svg" alt="green pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;"/></span>
+         <div class="pea_holder" style="">
+            <span id="gpea1" style="" tooltip="" flow="down"><img id="gpea_svg1" src="img/green_pea.svg" alt="green pea, has YY alleles" /></span>
+            <span id="gpea2" style="" tooltip="" flow="down"><img id="gpea_svg2" src="img/green_pea.svg" alt="green pea, has YY alleles" /></span>
+            <span id="gpea3" style="" tooltip="" flow="down"><img id="gpea_svg3" src="img/green_pea.svg" alt="green pea, has YY alleles" /></span>
+            <span id="ypea1" style="" tooltip="" flow="down"><img id="ypea_svg1" src="img/yellow_pea.svg" alt="yellow pea, has YY alleles"  /></span>
+            <span id="ypea2" style="" tooltip="" flow="down"><img id="ypea_svg2" src="img/yellow_pea.svg" alt="yellow pea, has YY alleles"  /></span>
+            <span id="ypea3" style="" tooltip="" flow="down"><img id="ypea_svg3" src="img/yellow_pea.svg" alt="yellow pea, has YY alleles"  /></span>
+            <span id="ypea4" style="" tooltip="" flow="down"><img id="ypea_svg4" src="img/yellow_pea.svg" alt="yellow pea, has YY alleles"  /></span>
+            <span id="gpea4" style="" tooltip="" flow="down"><img id="gpea_svg4" src="img/green_pea.svg" alt="green pea, has YY alleles"  /></span>
+            <span id="ypea5" style="" tooltip="has YY alleles" flow="right"><img id="ypea_svg5" src="img/yellow_pea.svg" alt="yellow pea, has YY alleles"   /></span>
+            <span id="gpea5" style="" tooltip="has yy alleles" flow="right"><img id="gpea_svg5" src="img/green_pea.svg" alt="green pea, has YY alleles" /></span>
          </div>
-         <table class="table_pea" style="margin: auto;margin-top:-90px;">
+         <table class="table_pea" style="">
             <tbody>
                <tr>
                   <td></td>
@@ -73,14 +74,14 @@
                </tr>
             </tbody>
          </table>
-         <i class="material-icons" style="float:right;padding:0 20px 0 0;cursor:pointer;margin-top: -25px;" onclick="pea_animate_1();" alt="Play it again">replay</i>
+         <i class="material-icons replay_bt" style="" tooltip="Play it again" flow="left" onclick="pea_animate_1();" alt="Play it again">replay</i>
       </div>
    </section>
    <!-- right side table info -->
    <section>
-      <div class="section_right" style="background-color:#D3D3D3;">
-         <div class="icon_controller" style=""><span ><a tooltip="More infomation." flow="left" style="font-size:25px;">&#9432;</a> <a tooltip="Close" flow="down"  style="font-size:25px;">&#9447;</a></span></div>
-         <table  class="table_data" style="padding-top:20px;">
+      <div class="section_right" style="">
+         <div class="icon_controller" style=""><span ><a tooltip="More infomation." flow="left" style="">&#9432;</a> <a tooltip="Close" flow="down"  style="">&#9447;</a></span></div>
+         <table  class="table_data" style="">
             <tbody>
                <tr>
                   <td class="table_title" colspan="3" tooltip="combination of traits" flow="down">Phenotypic Ratio</td>
@@ -102,7 +103,7 @@
                </tr>
             </tbody>
          </table>
-         <table  style="width:100%;padding:20px 0px;" cellpadding="5" style="padding-top:30px;">
+         <table class="table_row_two" style="" cellpadding="5" style="">
             <tbody>
                <tr>
                   <td class="table_title" colspan="2" tooltip="Pattern of offspring distribution" flow="down">Genotypic ratio</td>
