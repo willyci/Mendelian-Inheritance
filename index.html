@@ -8,7 +8,7 @@
 <head>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
 
@@ -49,7 +49,7 @@
 		<div>
 			<img src="https://placehold.it/100x50/C6C6C6/ffffff.png&text=Logo" />
 			<span class="vl"> </span>
-			<span>Mendelian Inheritance</span>
+			<span style="color:white;">Mendelian Inheritance</span>
 		</div>
 		<div class="header" style="color:white;font-weight:bold;font-size:15px;padding: 15px 10px;">
 			<span>Mendelian Inheritance</span>
@@ -70,8 +70,8 @@
 						
 			<span id="gpea4" style="position:absolute;padding-top:50px;" tooltip="" flow="down"><img id="gpea_svg4" src="img/green_pea.svg" alt="green pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;"/></span>
 			
-			<span id="ypea5" style="position:absolute;" tooltip="has YY alleles" flow="down"><img id="ypea_svg4" src="img/yellow_pea.svg" alt="yellow pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;" /></span>
-			<span id="gpea5" style="position:absolute;padding-top:50px;" tooltip="has yy alleles" flow="down"><img id="gpea_svg4" src="img/green_pea.svg" alt="green pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;"/></span>
+			<span id="ypea5" style="position:absolute;" tooltip="has YY alleles" flow="right"><img id="ypea_svg4" src="img/yellow_pea.svg" alt="yellow pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;" /></span>
+			<span id="gpea5" style="position:absolute;padding-top:50px;" tooltip="has yy alleles" flow="right"><img id="gpea_svg4" src="img/green_pea.svg" alt="green pea, has YY alleles" style="width:40px;height:40px;padding-top:10px;"/></span>
 		</div>
 		<table class="table_pea" style="margin: auto;margin-top:-90px;">
 			<tbody>
@@ -82,17 +82,17 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td class="pea_1 cell_pea"><img src="img/yellow_pea.svg" /><p tooltip="has YY alleles" flow="right">YY</p></td>
-					<td class="pea_2 cell_pea"><img src="img/yellow_pea.svg" /><p tooltip="has Yy alleles" flow="left">Yy</p></td>
+					<td class="pea_1 cell_pea" ><img src="img/yellow_pea.svg" /><p tooltip="has Dominanl alleles" flow="right">YY</p></td>
+					<td class="pea_2 cell_pea"><img src="img/yellow_pea.svg" /><p tooltip="has Dominanl alleles" flow="left">Yy</p></td>
 				</tr>
 				<tr>
 					<td></td>
-					<td class="pea_3 cell_pea"><img src="img/yellow_pea.svg" /><p tooltip="has Yy alleles" flow="right">Yy</p></td>
-					<td class="pea_4 cell_pea"><img src="img/green_pea.svg"  /><p tooltip="has yy alleles" flow="left">yy</p></td>
+					<td class="pea_3 cell_pea"><img src="img/yellow_pea.svg" /><p tooltip="has Dominanl alleles" flow="right">Yy</p></td>
+					<td class="pea_4 cell_pea"><img src="img/green_pea.svg"  /><p tooltip="no Dominanl alleles" flow="left">yy</p></td>
 				</tr>
 			</tbody>
 		</table>
-
+		<i class="material-icons" style="float:right;padding:10px;cursor:pointer;" onclick="pea_animate_1();" alt="Play it again">replay</i>
 	</div>
 
 
