@@ -86,6 +86,53 @@ function pea_animate_4(){
 }
 
 
+// on user click on pea
+var s1 = 0;
+function selectPea( which ) {
+	log('selected ' + which );
+	
+	// 
+	if(s1==0){		
+		s1= which;
+		log('got first one '+s1);
+		return;
+	}
+	
+	else if ( s1 != 0 ) {
+		log('got second one ' + which + " reset s1");
+		
+		var str = (s1*10+which).toString().split('').sort();
+		log('you got '+str);
+		
+		switch (str.toString()) {
+			case '1,1' : log('YY 1'); 
+			break;
+			case '1,2' : log('YY 2'); 
+			break;
+			case '1,3' : log('YY 3'); 
+			break;
+			case '2,2' : log('YY 4'); 
+			break;
+			case '2,3' : log('YY 5'); 
+			break;
+			case '3,3' : log('yy 6 '); 
+			break;
+			default : log('nothing'); 
+			break;
+		}
+		
+		
+		
+		s1=0; //reset 
+	}
+
+	
+	
+	}
+
+
+
+
 // hide all peas, reset all peas
 function reset_all() {
 	
@@ -113,7 +160,7 @@ $(function() {
 	
 	// onload reset all, run after 2 seconds
 	reset_all();
-	setTimeout(function(){ pea_animate_1(); }, 2000);
+	//setTimeout(function(){ pea_animate_1(); }, 2000);
 	mouse_over_event();
 
 

@@ -77,6 +77,60 @@ body{
 	position:absolute;
 }
 
+
+#ypea_click_1  {
+	position:absolute;
+}
+#ypea_click_1 > p {
+	position: absolute;
+    margin-left: 50px;
+    margin-top: -35px;
+}
+#ypeas_click_1_svg{
+	width:40px;
+	height:40px;
+	padding-top:10px;
+}	
+
+
+#ypea_click_2{
+	position: absolute;
+	margin-top:100px;
+}
+#ypea_click_2> p {
+	position: absolute;
+    margin-left: 50px;
+    margin-top: -40px;
+}
+#ypeas_click_2_svg{
+	width:40px;
+	height:40px;
+	padding-top:10px;
+}
+
+
+#gpea_click_3 {
+	position: absolute;
+	margin-top:50px;
+}
+#gpea_click_3 > p {
+	position: absolute;
+    margin-left: 50px;
+    margin-top: -37px;
+}
+
+#gpeas_click_3_svg{
+	width:40px;
+	height:40px;
+	padding-top:10px;
+}
+
+
+#clear_bt{
+	top: 350px;
+    position: absolute;
+}
+
 .replay_bt {
 	float:right;
 	padding:0 20px 0 0;

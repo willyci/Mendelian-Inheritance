@@ -21,14 +21,25 @@ a. Phenotypic Ratio and Genotypic Ratio
 7. Project should run on localhost, ideally host your project
 8. Consider ui elements (hover and active states, inputs, usability, accessibility,
 responsiveness)
-9. Do not minify or compress your code
 
 10. Use version control, and be able to provide the url to your project repo
-a. Include a README.md file
+	https://github.com/willyci/Mendelian-Inheritance
+
 i. Explain your design decisions
+	- using animation
+	- mouse over tooltip for more info
+	- end user interactive without too much effort
+	
 ii. Explain your development decisions
+	- create layout first, 
+	- mouser over animation second
+	- tooltip third
+	- pea animation fourth
+	
+
 iii. Explain areas for future improvement
+	website 508 compliance checker
+	QA on more browser and devices
+
+
 iv. Add anything else you think is important
-
-
-website 508 compliance checker
