@@ -34,6 +34,8 @@ function mouse_over_event(){
 }
 
 // all peas animations 
+// first pea, then done, call second pea
+
 function pea_animate_1(){
 	
 	reset_all();
@@ -47,6 +49,7 @@ function pea_animate_1(){
 	
 }
 
+// second pea, then done, call third 
 function pea_animate_2(){
 
 	var x = $('.pea_2 > img')[0].getBoundingClientRect().top-8+$(window).scrollTop();
@@ -58,7 +61,7 @@ function pea_animate_2(){
 	
 }
 
-
+// third pea, then done, call fourth pea 
 function pea_animate_3(){
 	
 	var x = $('.pea_3 > img')[0].getBoundingClientRect().top-8+$(window).scrollTop();
@@ -70,7 +73,7 @@ function pea_animate_3(){
 	
 }
 
-
+// fourth pea, 
 function pea_animate_4(){
 	
 	var x = $('.pea_4 > img')[0].getBoundingClientRect().top-8+$(window).scrollTop();
