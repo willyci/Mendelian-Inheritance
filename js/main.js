@@ -3,26 +3,26 @@ function mouse_over_event(){
 	
 	$('.ph_1, .ph_1_1, .ph_1_2').mouseenter(function(){
 		$('.ph_1, .ph_1_1, .ph_1_2').addClass('mouse_over_yellow');
-		if($('.pea_1 > img').attr('src').indexOf('yellow') > 1) $('.pea_1').addClass('mouse_over_yellow'); 
-		if($('.pea_2 > img').attr('src').indexOf('yellow') > 1) $('.pea_2').addClass('mouse_over_yellow'); 
-		if($('.pea_3 > img').attr('src').indexOf('yellow') > 1) $('.pea_3').addClass('mouse_over_yellow'); 
-		if($('.pea_4 > img').attr('src').indexOf('yellow') > 1) $('.pea_4').addClass('mouse_over_yellow'); 
+		if($('.pea_1_txt').html().indexOf('YY') == 0) $('.pea_1').addClass('mouse_over_yellow'); 
+		if($('.pea_2_txt').html().indexOf('YY') == 0) $('.pea_2').addClass('mouse_over_yellow'); 
+		if($('.pea_3_txt').html().indexOf('YY') == 0) $('.pea_3').addClass('mouse_over_yellow'); 
+		if($('.pea_4_txt').html().indexOf('YY') == 0) $('.pea_4').addClass('mouse_over_yellow'); 
 	}).mouseleave(function(){
 		$('.ph_1, .ph_1_1, .ph_1_2, .pea_1, .pea_2, .pea_3, .pea_4').removeClass('mouse_over_yellow').removeClass('mouse_over_green');
 	});
 	
 	$('.ph_2, .ph_2_1, .ph_2_2').mouseenter(function(){
 		$('.ph_2, .ph_2_1, .ph_2_2').addClass('mouse_over_yellow');
-		if($('.pea_1 > img').attr('src').indexOf('yellow') > 1) $('.pea_1').addClass('mouse_over_yellow'); 
-		if($('.pea_2 > img').attr('src').indexOf('yellow') > 1) $('.pea_2').addClass('mouse_over_yellow'); 
-		if($('.pea_3 > img').attr('src').indexOf('yellow') > 1) $('.pea_3').addClass('mouse_over_yellow'); 
-		if($('.pea_4 > img').attr('src').indexOf('yellow') > 1) $('.pea_4').addClass('mouse_over_yellow'); 
+		if($('.pea_1_txt').html().indexOf('Yy') == 0) $('.pea_1').addClass('mouse_over_yellow'); 
+		if($('.pea_2_txt').html().indexOf('Yy') == 0) $('.pea_2').addClass('mouse_over_yellow'); 
+		if($('.pea_3_txt').html().indexOf('Yy') == 0 && $('.pea_3 > img').attr('src').indexOf('yellow') > 1) $('.pea_3').addClass('mouse_over_yellow'); 
+		if($('.pea_4_txt').html().indexOf('Yy') == 0) $('.pea_4').addClass('mouse_over_yellow'); 
 	}).mouseleave(function(){
 		$('.ph_2, .ph_2_1, .ph_2_2, .pea_1, .pea_2, .pea_3, .pea_4').removeClass('mouse_over_yellow').removeClass('mouse_over_green');
 	});
 
 	$('.ph_3, .ph_3_1, .ph_3_2').mouseenter(function(){
-		$('.ph_3, .ph_3_1, .ph_3_2').addClass('mouse_over_yellow');
+		$('.ph_3, .ph_3_1, .ph_3_2').addClass('mouse_over_green');
 		if($('.pea_1 > img').attr('src').indexOf('green') > 1) $('.pea_1').addClass('mouse_over_green'); 
 		if($('.pea_2 > img').attr('src').indexOf('green') > 1) $('.pea_2').addClass('mouse_over_green'); 
 		if($('.pea_3 > img').attr('src').indexOf('green') > 1) $('.pea_3').addClass('mouse_over_green'); 
@@ -111,13 +111,13 @@ function pea_animate_4(){
 // on user click on pea
 var s1 = 0;
 function selectPea( which ) {
-	log('selected ' + which );
+	//log('selected ' + which );
 	
 	// 
 	if(s1==0){		
 		reset_all();
 		s1 = which;
-		log('got first one '+s1);
+		//log('got first one '+s1);
 		switch (s1.toString()) {
 			case '1' : $('.pea_11').html('Y');
 					   $('.pea_12').html('Y');
@@ -133,10 +133,10 @@ function selectPea( which ) {
 	}
 	
 	else if ( s1 != 0 ) {
-		log('got second one ' + which + " reset s1");
+		//log('got second one ' + which + " reset s1");
 		
 		var str = (s1*10+which).toString().split('').sort();
-		log('you got '+str);
+		//log('you got '+str);
 		
 		switch (str.toString()) {
 			case '1,1' : log('YYYY'); 
