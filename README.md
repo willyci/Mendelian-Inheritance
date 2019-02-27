@@ -24,23 +24,26 @@ responsiveness)
 
 10. Use version control, and be able to provide the url to your project repo
 	https://github.com/willyci/Mendelian-Inheritance
+	https://flexcode.org/Mendelian-Inheritance/index.html
 
 i. Explain your design decisions
-	- reading about Bring Mendel’s pea plant experiments
-	- understand the experiments
-	- imagine how student will interactive with it.
-	- end user interactive without too much effort
+
+- reading about Bring Mendel’s pea plant experiments
+- understand the experiments
+- imagine how student will interactive with it.
+- end user interactive without too much effort
 	
 ii. Explain your development decisions
-	- create layout base on the design
-	- interactive base on user input, select 2 peas build image table
-	- need connect the data and image, add mouse over table change background color function
-	- testing in IE, FF, Chrome, 
+
+- create layout base on the design
+- interactive base on user input, select 2 peas build image table
+- need connect the data and image, add mouse over table change background color function
+- testing in IE, FF, Chrome, 
 	
 
 iii. Explain areas for future improvement
-	website 508 compliance checker
-	QA on more browser and devices
+- website 508 compliance checker
+- QA on more browser and devices
 
 
 iv. Add anything else you think is important
