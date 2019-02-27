@@ -26,15 +26,17 @@ responsiveness)
 	https://github.com/willyci/Mendelian-Inheritance
 
 i. Explain your design decisions
-	- using animation
-	- mouse over tooltip for more info
+	- reading about Bring Mendel’s pea plant experiments
+	- understand the experiments
+	- imagine how student will interactive with it.
 	- end user interactive without too much effort
 	
 ii. Explain your development decisions
-	- create layout first, 
-	- mouser over animation second
-	- tooltip third
-	- pea animation fourth
+	- create layout base on the design
+	- interactive 
+	- animation
+	- tooltip
+	- testing in IE, FF, Chrome, 
 	
 
 iii. Explain areas for future improvement

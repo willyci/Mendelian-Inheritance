@@ -80,6 +80,7 @@ body{
 
 #ypea_click_1  {
 	position:absolute;
+	cursor:pointer;
 }
 #ypea_click_1 > p {
 	position: absolute;
@@ -96,6 +97,7 @@ body{
 #ypea_click_2{
 	position: absolute;
 	margin-top:100px;
+	cursor:pointer;
 }
 #ypea_click_2> p {
 	position: absolute;
@@ -112,6 +114,7 @@ body{
 #gpea_click_3 {
 	position: absolute;
 	margin-top:50px;
+	cursor:pointer;
 }
 #gpea_click_3 > p {
 	position: absolute;
@@ -129,6 +132,29 @@ body{
 #clear_bt{
 	top: 350px;
     position: absolute;
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:5px 12px;
+	text-decoration:none;
+}
+#clear_bt:hover {
+	background-color:#5cbf2a;
+}
+#clear_bt:active {
+	position:absolute;
+	top:350px;
+}
+#clear_bt:focus {
+outline: 0;
 }
 
 #instruction{	

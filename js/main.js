@@ -1,34 +1,57 @@
 // mouse over text, change bg-color 
 function mouse_over_event(){
 	
-	$('.ph_1').mouseenter(function(){
-		$('.ph_1, .pea_1').addClass('mouse_over_yellow');
+	$('.ph_1, .ph_1_1, .ph_1_2').mouseenter(function(){
+		$('.ph_1, .ph_1_1, .ph_1_2').addClass('mouse_over_yellow');
+		if($('.pea_1 > img').attr('src').indexOf('yellow') > 1) $('.pea_1').addClass('mouse_over_yellow'); 
+		if($('.pea_2 > img').attr('src').indexOf('yellow') > 1) $('.pea_2').addClass('mouse_over_yellow'); 
+		if($('.pea_3 > img').attr('src').indexOf('yellow') > 1) $('.pea_3').addClass('mouse_over_yellow'); 
+		if($('.pea_4 > img').attr('src').indexOf('yellow') > 1) $('.pea_4').addClass('mouse_over_yellow'); 
 	}).mouseleave(function(){
-		$('.ph_1, .pea_1').removeClass('mouse_over_yellow');
+		$('.ph_1, .ph_1_1, .ph_1_2, .pea_1, .pea_2, .pea_3, .pea_4').removeClass('mouse_over_yellow').removeClass('mouse_over_green');
+	});
+	
+	$('.ph_2, .ph_2_1, .ph_2_2').mouseenter(function(){
+		$('.ph_2, .ph_2_1, .ph_2_2').addClass('mouse_over_yellow');
+		if($('.pea_1 > img').attr('src').indexOf('yellow') > 1) $('.pea_1').addClass('mouse_over_yellow'); 
+		if($('.pea_2 > img').attr('src').indexOf('yellow') > 1) $('.pea_2').addClass('mouse_over_yellow'); 
+		if($('.pea_3 > img').attr('src').indexOf('yellow') > 1) $('.pea_3').addClass('mouse_over_yellow'); 
+		if($('.pea_4 > img').attr('src').indexOf('yellow') > 1) $('.pea_4').addClass('mouse_over_yellow'); 
+	}).mouseleave(function(){
+		$('.ph_2, .ph_2_1, .ph_2_2, .pea_1, .pea_2, .pea_3, .pea_4').removeClass('mouse_over_yellow').removeClass('mouse_over_green');
 	});
 
-	$('.ph_2').mouseenter(function(){
-		$('.ph_2, .pea_2, .pea_3').addClass('mouse_over_yellow');
+	$('.ph_3, .ph_3_1, .ph_3_2').mouseenter(function(){
+		$('.ph_3, .ph_3_1, .ph_3_2').addClass('mouse_over_yellow');
+		if($('.pea_1 > img').attr('src').indexOf('green') > 1) $('.pea_1').addClass('mouse_over_green'); 
+		if($('.pea_2 > img').attr('src').indexOf('green') > 1) $('.pea_2').addClass('mouse_over_green'); 
+		if($('.pea_3 > img').attr('src').indexOf('green') > 1) $('.pea_3').addClass('mouse_over_green'); 
+		if($('.pea_4 > img').attr('src').indexOf('green') > 1) $('.pea_4').addClass('mouse_over_green');
 	}).mouseleave(function(){
-		$('.ph_2, .pea_2, .pea_3').removeClass('mouse_over_yellow');
+		$('.ph_3, .ph_3_1, .ph_3_2, .pea_1, .pea_2, .pea_3, .pea_4').removeClass('mouse_over_yellow').removeClass('mouse_over_green');
 	});
 
-	$('.ph_3').mouseenter(function(){
-		$('.ph_3, .pea_4').addClass('mouse_over_green');
+
+
+
+	$('.gr_1, .gr_1_1, .gr_1_2').mouseenter(function(){
+		$('.gr_1, .gr_1_1, .gr_1_2').addClass('mouse_over_yellow');
+		if($('.pea_1 > img').attr('src').indexOf('yellow') > 1) $('.pea_1').addClass('mouse_over_yellow'); 
+		if($('.pea_2 > img').attr('src').indexOf('yellow') > 1) $('.pea_2').addClass('mouse_over_yellow'); 
+		if($('.pea_3 > img').attr('src').indexOf('yellow') > 1) $('.pea_3').addClass('mouse_over_yellow'); 
+		if($('.pea_4 > img').attr('src').indexOf('yellow') > 1) $('.pea_4').addClass('mouse_over_yellow'); 
 	}).mouseleave(function(){
-		$('.ph_3, .pea_4').removeClass('mouse_over_green');
+		$('.gr_1, .gr_1_1, .gr_1_2, .ph_2_2, .pea_1, .pea_2, .pea_3, .pea_4').removeClass('mouse_over_yellow');
 	});
 
-	$('.gr_1').mouseenter(function(){
-		$('.gr_1, .pea_1, .pea_2, .pea_3').addClass('mouse_over_yellow');
+	$('.gr_2, .gr_2_1, .gr_2_2').mouseenter(function(){
+		$('.gr_2, .gr_2_1, .gr_2_2').addClass('mouse_over_green');
+		if($('.pea_1 > img').attr('src').indexOf('green') > 1) $('.pea_1').addClass('mouse_over_green'); 
+		if($('.pea_2 > img').attr('src').indexOf('green') > 1) $('.pea_2').addClass('mouse_over_green'); 
+		if($('.pea_3 > img').attr('src').indexOf('green') > 1) $('.pea_3').addClass('mouse_over_green'); 
+		if($('.pea_4 > img').attr('src').indexOf('green') > 1) $('.pea_4').addClass('mouse_over_green'); 
 	}).mouseleave(function(){
-		$('.gr_1, .pea_1, .pea_2, .pea_3').removeClass('mouse_over_yellow');
-	});
-
-	$('.gr_2').mouseenter(function(){
-		$('.gr_2, .pea_4').addClass('mouse_over_green');
-	}).mouseleave(function(){
-		$('.gr_2, .pea_4').removeClass('mouse_over_green');
+		$('.gr_2, .gr_2_1, .gr_2_2, .pea_1, .pea_2, .pea_3, .pea_4').removeClass('mouse_over_green');
 	});
 
 }
@@ -175,16 +198,22 @@ function selectPea( which ) {
 				
 			break;
 			case '1,3' : log('YYYy'); 
-				if(which != 1 ){ $('.pea_21').html('Y');$('.pea_22').html('y'); } else  { $('.pea_21').html('Y');$('.pea_22').html('Y'); }
+				if(which != 1 ){ $('.pea_21').html('Y');$('.pea_22').html('y'); 
+				$('.pea_2_txt').html('YY').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_3_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+				} else  { $('.pea_21').html('Y');$('.pea_22').html('Y'); 
+				$('.pea_2_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_3_txt').html('YY').css('opacity','0').animate({opacity: 1},1000);
+				}
 				$('.pea_1_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
 				$('.pea_1_svg').animate({opacity: 1},1000);
 				$('.pea_1_txt').html('YY').css('opacity','0').animate({opacity: 1},1000);
 				$('.pea_2_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
 				$('.pea_2_svg').animate({opacity: 1},1000);
-				$('.pea_2_txt').html('YY').css('opacity','0').animate({opacity: 1},1000);
+				
 				$('.pea_3_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
 				$('.pea_3_svg').animate({opacity: 1},1000);
-				$('.pea_3_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+				
 				$('.pea_4_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
 				$('.pea_4_svg').animate({opacity: 1},1000);
 				$('.pea_4_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);				
@@ -332,11 +361,11 @@ function reset_all() {
 	
 	$('#gpea1, #gpea2, #gpea3, #gpea4').css('top', 'auto').css('left', 'auto');
 
-	$('.pea_11, .pea_12, .pea_21, .pea_22, .pea_1_txt, .pea_2_txt, .pea_3_txt, .pea_4_txt').html('&nbsp;');
+	$('.pea_11, .pea_12, .pea_21, .pea_22, .pea_1_txt, .pea_2_txt, .pea_3_txt, .pea_4_txt').html('&nbsp;&nbsp;');
 	
-	$('.ph_1_1, .ph_2_1, .ph_3_1, .ph_1_2, .ph_2_2, .ph_3_2').html('&nbsp;');
+	$('.ph_1_1, .ph_2_1, .ph_3_1, .ph_1_2, .ph_2_2, .ph_3_2').html('&nbsp;&nbsp;');
 	
-	$('.gr_1_1, .gr_2_1, .gr_1_2, .gr_2_2').html('&nbsp;');
+	$('.gr_1_1, .gr_2_1, .gr_1_2, .gr_2_2').html('&nbsp;&nbsp;');
 
 }	
 
@@ -349,7 +378,7 @@ $(function() {
 	// onload reset all, run after 2 seconds
 	reset_all();
 	//setTimeout(function(){ pea_animate_1(); }, 2000);
-	//mouse_over_event();
+	mouse_over_event();
 
 
 
