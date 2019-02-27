@@ -131,6 +131,11 @@ body{
     position: absolute;
 }
 
+#instruction{	
+	top: 327px;
+    position: absolute;
+}
+
 .replay_bt {
 	float:right;
 	padding:0 20px 0 0;
@@ -328,9 +333,15 @@ td {
 	min-width: 200px;
 	border: solid 0px ;
 	padding-left: 15px 0px;
-	min-height: 460px;
-    max-height: 460px;
+	min-height: 474px;
+    max-height: 474px;
 	 box-sizing: border-box;
+}
+
+.table_pea {
+    margin: auto;
+    margin-top: -90px;
+    margin-left: 90px;
 }
 
 .section_right {
@@ -387,6 +398,12 @@ td {
     max-height: 560px;
 }
 
+.table_pea {
+    margin: auto;
+    margin-top: -90px;
+    margin-left: 90px;
+}
+
 .section_right {
 
 	width: 46%;
@@ -440,11 +457,16 @@ td {
 	min-width: 200px;
 	border: solid 0px ;
 	padding-left: 15px 0px;
-	min-height: 460px;
-    max-height: 460px;
+	min-height: 474px;
+    max-height: 474px;
 	 box-sizing: border-box;
 }
 
+.table_pea {
+    margin: auto;
+    margin-top: -90px;
+    margin-left: 90px;
+}
 .section_right {
 
 	width: 100%;

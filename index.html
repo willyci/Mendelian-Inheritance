@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width,user-scalable=no">
+
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width,user-scalable=no">
    <title>Mendelian Inheritance</title>
    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -43,40 +44,43 @@
             <span id="ypea_click_1" style="" ><img id="ypeas_click_1_svg" src="img/yellow_pea.svg" alt="yellow pea, has YY alleles"  onclick="selectPea(1)" /><p>YY</p></span>			
             <span id="ypea_click_2" style="" ><img id="ypeas_click_2_svg" src="img/yellow_pea.svg" alt="yellow pea, has Yy alleles"  onclick="selectPea(3)"  /><p>Yy</p></span>
             <span id="gpea_click_3" style="" ><img id="gpeas_click_3_svg" src="img/green_pea.svg" alt="green pea, has YY alleles"  onclick="selectPea(2)" /><p>yy</p></span>
+			<span id="instruction">pick 2</span>
 			<button id="clear_bt" onclick="reset_all()">Clear</button>
          </div>
          <table class="table_pea" style="">
             <tbody>
                <tr>
                   <td></td>
-                  <td></td>
-                  <td></td>
+                  <td class="pea_11">&nbsp;</td>
+                  <td class="pea_12">&nbsp;</td>
                </tr>
                <tr>
-                  <td></td>
+                  <td  class="pea_21">&nbsp;</td>
                   <td class="pea_1 cell_pea" >
-                     <img src="img/yellow_pea.svg" />
-                     <p tooltip="has Dominanl alleles" flow="right">YY</p>
+                     <img class="pea_1_svg" src="img/yellow_pea.svg" />
+                     <p  class="pea_1_txt"  flow="right"></p>
                   </td>
                   <td class="pea_2 cell_pea">
-                     <img src="img/yellow_pea.svg" />
-                     <p tooltip="has Dominanl alleles" flow="left">Yy</p>
+                     <img class="pea_2_svg" src="img/yellow_pea.svg" />
+                     <p  class="pea_2_txt" flow="left"></p>
                   </td>
                </tr>
                <tr>
-                  <td></td>
+                  <td  class="pea_22">&nbsp;</td>
                   <td class="pea_3 cell_pea">
-                     <img src="img/yellow_pea.svg" />
-                     <p tooltip="has Dominanl alleles" flow="right">Yy</p>
+                     <img class="pea_3_svg" src="img/yellow_pea.svg" />
+                     <p class="pea_3_txt" flow="right"></p>
                   </td>
                   <td class="pea_4 cell_pea">
-                     <img src="img/green_pea.svg"  />
-                     <p tooltip="no Dominanl alleles" flow="left">yy</p>
+                     <img class="pea_4_svg" src="img/yellow_pea.svg"  />
+                     <p  class="pea_4_txt" flow="left"></p>
                   </td>
                </tr>
             </tbody>
          </table>
-         <i class="material-icons replay_bt" style="" tooltip="Play it again" flow="left" onclick="pea_animate_1();" alt="Play it again">replay</i>
+         <!--
+		 <i class="material-icons replay_bt" style="" tooltip="Play it again" flow="left" onclick="pea_animate_1();" alt="Play it again" >replay</i>
+		 -->
       </div>
    </section>
    <!-- right side table info -->
@@ -94,14 +98,14 @@
                   <td class="ph_3 cell_data" tooltip="have 2 recessive allele" flow="left">Homozygous Recessive</td>
                </tr>
                <tr>
-                  <td class="ph_1 cell_data" tooltip="1 has YY" flow="right">1</td>
-                  <td class="ph_2 cell_data" tooltip="2 have Yy" flow="right">2</td>
-                  <td class="ph_3 cell_data" tooltip="1 has yy" flow="left">1</td>
+                  <td class="ph_1_1 cell_data" tooltip="" flow="right">1</td>
+                  <td class="ph_2_1 cell_data" tooltip="" flow="right">2</td>
+                  <td class="ph_3_1 cell_data" tooltip="" flow="left">1</td>
                </tr>
                <tr>
-                  <td class="ph_1 cell_data" tooltip="1 out of 4 pea" flow="right">25%</td>
-                  <td class="ph_2 cell_data" tooltip="2 out of 4 peas" flow="right">50%</td>
-                  <td class="ph_3 cell_data" tooltip="1 out of 4 pea" flow="left">25%</td>
+                  <td class="ph_1_2 cell_data" tooltip="" flow="right">25%</td>
+                  <td class="ph_2_2 cell_data" tooltip="" flow="right">50%</td>
+                  <td class="ph_3_2 cell_data" tooltip="" flow="left">25%</td>
                </tr>
             </tbody>
          </table>
@@ -115,12 +119,12 @@
                   <td class="gr_2 cell_data" tooltip="green pea" flow="left">Green</td>
                </tr>
                <tr>
-                  <td class="gr_1 cell_data" tooltip="3 yellow peas" flow="right">3</td>
-                  <td class="gr_2 cell_data" tooltip="1 green pea" flow="left">1</td>
+                  <td class="gr_1_1 cell_data" tooltip="" flow="right">3</td>
+                  <td class="gr_2_1 cell_data" tooltip="" flow="left">1</td>
                </tr>
                <tr>
-                  <td class="gr_1 cell_data" tooltip="3 out of 4 peas" flow="right">75%</td>
-                  <td class="gr_2 cell_data" tooltip="1 out of 4 pea" flow="left">25%</td>
+                  <td class="gr_1_2 cell_data" tooltip="" flow="right">75%</td>
+                  <td class="gr_2_2 cell_data" tooltip="" flow="left">25%</td>
                </tr>
             </tbody>
          </table>
@@ -128,6 +132,8 @@
    </section>
    <footer>
    </footer>
-</body>
+   
+	</body>
+
 </html>
 

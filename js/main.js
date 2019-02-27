@@ -93,8 +93,20 @@ function selectPea( which ) {
 	
 	// 
 	if(s1==0){		
-		s1= which;
+		reset_all();
+		s1 = which;
 		log('got first one '+s1);
+		switch (s1.toString()) {
+			case '1' : $('.pea_11').html('Y');
+					   $('.pea_12').html('Y');
+			break;
+			case '2' : $('.pea_11').html('y');
+					   $('.pea_12').html('y');
+			break;
+			case '3' : $('.pea_11').html('Y');
+					   $('.pea_12').html('y');
+			break;
+		}
 		return;
 	}
 	
@@ -105,19 +117,192 @@ function selectPea( which ) {
 		log('you got '+str);
 		
 		switch (str.toString()) {
-			case '1,1' : log('YY 1'); 
+			case '1,1' : log('YYYY'); 
+				$('.pea_21').html('Y');
+				$('.pea_22').html('Y');
+				$('.pea_1_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_1_svg').animate({opacity: 1},1000);
+				$('.pea_1_txt').html('YY').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_2_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_2_svg').animate({opacity: 1},1000);
+				$('.pea_2_txt').html('YY').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_3_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_3_svg').animate({opacity: 1},1000);
+				$('.pea_3_txt').html('YY').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_4_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_4_svg').animate({opacity: 1},1000);
+				$('.pea_4_txt').html('YY').css('opacity','0').animate({opacity: 1},1000);				
+				
+				$('.ph_1_1').html('4').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_2_1').html('0').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_3_1').html('0').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_1_2').html('100%').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_2_2').html('0%').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_3_2').html('0%').css('opacity','0').animate({opacity: 1},1000);
+				
+				$('.gr_1_1').html('4').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_2_1').html('0').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_1_2').html('100%').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_2_2').html('0%').css('opacity','0').animate({opacity: 1},1000);				
+				
 			break;
-			case '1,2' : log('YY 2'); 
+			case '1,2' : log('YYyy'); 
+				if(which != 1 ){ $('.pea_21').html('y');$('.pea_22').html('y'); } else  { $('.pea_21').html('Y');$('.pea_22').html('Y'); }
+				$('.pea_1_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_1_svg').animate({opacity: 1},1000);
+				$('.pea_1_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_2_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_2_svg').animate({opacity: 1},1000);
+				$('.pea_2_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_3_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_3_svg').animate({opacity: 1},1000);
+				$('.pea_3_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_4_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_4_svg').animate({opacity: 1},1000);
+				$('.pea_4_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);				
+				
+				$('.ph_1_1').html('0').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_2_1').html('4').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_3_1').html('0').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_1_2').html('0%').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_2_2').html('100%').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_3_2').html('0%').css('opacity','0').animate({opacity: 1},1000);
+				
+				$('.gr_1_1').html('4').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_2_1').html('0').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_1_2').html('100%').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_2_2').html('0%').css('opacity','0').animate({opacity: 1},1000);
+				
 			break;
-			case '1,3' : log('YY 3'); 
+			case '1,3' : log('YYYy'); 
+				if(which != 1 ){ $('.pea_21').html('Y');$('.pea_22').html('y'); } else  { $('.pea_21').html('Y');$('.pea_22').html('Y'); }
+				$('.pea_1_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_1_svg').animate({opacity: 1},1000);
+				$('.pea_1_txt').html('YY').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_2_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_2_svg').animate({opacity: 1},1000);
+				$('.pea_2_txt').html('YY').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_3_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_3_svg').animate({opacity: 1},1000);
+				$('.pea_3_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_4_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_4_svg').animate({opacity: 1},1000);
+				$('.pea_4_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);				
+				
+				$('.ph_1_1').html('2').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_2_1').html('2').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_3_1').html('0').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_1_2').html('50%').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_2_2').html('50%').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_3_2').html('0%').css('opacity','0').animate({opacity: 1},1000);
+				
+				$('.gr_1_1').html('4').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_2_1').html('0').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_1_2').html('100%').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_2_2').html('0%').css('opacity','0').animate({opacity: 1},1000);
+
 			break;
-			case '2,2' : log('YY 4'); 
+			case '2,2' : log('yyyy'); 
+				$('.pea_21').html('y');
+				$('.pea_22').html('y');
+				$('.pea_1_svg').attr('src','img/green_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_1_svg').animate({opacity: 1},1000);
+				$('.pea_1_txt').html('yy').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_2_svg').attr('src','img/green_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_2_svg').animate({opacity: 1},1000);
+				$('.pea_2_txt').html('yy').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_3_svg').attr('src','img/green_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_3_svg').animate({opacity: 1},1000);
+				$('.pea_3_txt').html('yy').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_4_svg').attr('src','img/green_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_4_svg').animate({opacity: 1},1000);
+				$('.pea_4_txt').html('yy').css('opacity','0').animate({opacity: 1},1000);				
+				
+				$('.ph_1_1').html('0').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_2_1').html('0').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_3_1').html('4').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_1_2').html('0%').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_2_2').html('0%').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_3_2').html('100%').css('opacity','0').animate({opacity: 1},1000);
+				
+				$('.gr_1_1').html('0').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_2_1').html('4').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_1_2').html('0%').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_2_2').html('100%').css('opacity','0').animate({opacity: 1},1000);
+
 			break;
-			case '2,3' : log('YY 5'); 
+			case '2,3' : log('Yyyy'); 
+				if(which != 3 ){ $('.pea_21').html('y');$('.pea_22').html('y'); 
+					$('.pea_1_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+					$('.pea_1_svg').animate({opacity: 1},1000);
+					$('.pea_1_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+					$('.pea_2_svg').attr('src','img/green_pea.svg').css('opacity','0').css('visibility', 'visible');
+					$('.pea_2_svg').animate({opacity: 1},1000);
+					$('.pea_2_txt').html('yy').css('opacity','0').animate({opacity: 1},1000);
+					$('.pea_3_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+					$('.pea_3_svg').animate({opacity: 1},1000);
+					$('.pea_3_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+					$('.pea_4_svg').attr('src','img/green_pea.svg').css('opacity','0').css('visibility', 'visible');
+					$('.pea_4_svg').animate({opacity: 1},1000);
+					$('.pea_4_txt').html('yy').css('opacity','0').animate({opacity: 1},1000);				
+				} else  { $('.pea_21').html('Y');$('.pea_22').html('y');
+					$('.pea_1_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+					$('.pea_1_svg').animate({opacity: 1},1000);
+					$('.pea_1_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+					$('.pea_2_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+					$('.pea_2_svg').animate({opacity: 1},1000);
+					$('.pea_2_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+					$('.pea_3_svg').attr('src','img/green_pea.svg').css('opacity','0').css('visibility', 'visible');
+					$('.pea_3_svg').animate({opacity: 1},1000);
+					$('.pea_3_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+					$('.pea_4_svg').attr('src','img/green_pea.svg').css('opacity','0').css('visibility', 'visible');
+					$('.pea_4_svg').animate({opacity: 1},1000);
+					$('.pea_4_txt').html('yy').css('opacity','0').animate({opacity: 1},1000);	
+				}
+				$('.ph_1_1').html('0').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_2_1').html('2').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_3_1').html('2').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_1_2').html('0%').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_2_2').html('50%').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_3_2').html('50%').css('opacity','0').animate({opacity: 1},1000);
+				
+				$('.gr_1_1').html('2').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_2_1').html('2').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_1_2').html('50%').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_2_2').html('50%').css('opacity','0').animate({opacity: 1},1000);
+
 			break;
-			case '3,3' : log('yy 6 '); 
+			case '3,3' : log('YyYy'); 
+				$('.pea_21').html('Y');
+				$('.pea_22').html('y');
+				$('.pea_1_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_1_svg').animate({opacity: 1},1000);
+				$('.pea_1_txt').html('YY').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_2_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_2_svg').animate({opacity: 1},1000);
+				$('.pea_2_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_3_svg').attr('src','img/yellow_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_3_svg').animate({opacity: 1},1000);
+				$('.pea_3_txt').html('Yy').css('opacity','0').animate({opacity: 1},1000);
+				$('.pea_4_svg').attr('src','img/green_pea.svg').css('opacity','0').css('visibility', 'visible');
+				$('.pea_4_svg').animate({opacity: 1},1000);
+				$('.pea_4_txt').html('yy').css('opacity','0').animate({opacity: 1},1000);				
+				
+				$('.ph_1_1').html('1').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_2_1').html('2').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_3_1').html('1').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_1_2').html('25%').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_2_2').html('50%').css('opacity','0').animate({opacity: 1},1000);
+				$('.ph_3_2').html('25%').css('opacity','0').animate({opacity: 1},1000);
+				
+				$('.gr_1_1').html('3').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_2_1').html('1').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_1_2').html('75%').css('opacity','0').animate({opacity: 1},1000);
+				$('.gr_2_2').html('25%').css('opacity','0').animate({opacity: 1},1000);
+
 			break;
 			default : log('nothing'); 
+			s1=0;
 			break;
 		}
 		
@@ -147,10 +332,13 @@ function reset_all() {
 	
 	$('#gpea1, #gpea2, #gpea3, #gpea4').css('top', 'auto').css('left', 'auto');
 
+	$('.pea_11, .pea_12, .pea_21, .pea_22, .pea_1_txt, .pea_2_txt, .pea_3_txt, .pea_4_txt').html('&nbsp;');
 	
-}
+	$('.ph_1_1, .ph_2_1, .ph_3_1, .ph_1_2, .ph_2_2, .ph_3_2').html('&nbsp;');
+	
+	$('.gr_1_1, .gr_2_1, .gr_1_2, .gr_2_2').html('&nbsp;');
 
-
+}	
 
 function log(s){window.console && console.log(s);};
 
@@ -161,7 +349,7 @@ $(function() {
 	// onload reset all, run after 2 seconds
 	reset_all();
 	//setTimeout(function(){ pea_animate_1(); }, 2000);
-	mouse_over_event();
+	//mouse_over_event();
 
 
 
