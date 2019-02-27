@@ -33,7 +33,6 @@ function mouse_over_event(){
 
 
 
-
 	$('.gr_1, .gr_1_1, .gr_1_2').mouseenter(function(){
 		$('.gr_1, .gr_1_1, .gr_1_2').addClass('mouse_over_yellow');
 		if($('.pea_1 > img').attr('src').indexOf('yellow') > 1) $('.pea_1').addClass('mouse_over_yellow'); 

@@ -33,9 +33,8 @@ i. Explain your design decisions
 	
 ii. Explain your development decisions
 	- create layout base on the design
-	- interactive 
-	- animation
-	- tooltip
+	- interactive base on user input, select 2 peas build image table
+	- need connect the data and image, add mouse over table change background color function
 	- testing in IE, FF, Chrome, 
 	
 
